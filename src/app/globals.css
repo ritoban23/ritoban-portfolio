@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+}
+
+.dark {
+  --background: oklch(0.1 0 0);
+  --foreground: oklch(0.95 0 0);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Serif typography — used for headings and body text */
+.font-serif,
+.serif {
+  font-family: ui-serif, var(--font-pt-serif), var(--font-noto-serif), Georgia, serif;
+}
+
+/* Sans typography — used for labels, tags */
+.font-sans,
+.sans {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Mono typography */
+.font-mono,
+.mono {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: #e4d5c0;
+  color: #1a1a1a;
+}
+
+.dark ::selection {
+  background-color: #4a3f35;
+  color: #f5f5f5;
+}
+
+/* Accordion animations for Radix */
+@keyframes accordion-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@theme inline {
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+/* ── Stagger entrance animation (inspired by mayurbhoi.com) ────────── */
+@keyframes show {
+  from {
+    filter: blur(8px);
+    opacity: 0;
+    transform: translateY(6px) rotateX(30deg) scale(1.15);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px) rotateX(0deg) scale(1);
+  }
+}
+
+.appear {
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: show 0.5s ease forwards;
+}
+
+.stagger-1 {
+  animation-delay: 0.12s;
+}
+
+.stagger-2 {
+  animation-delay: 0.24s;
+}
+
+.stagger-3 {
+  animation-delay: 0.36s;
+}
+
+.stagger-4 {
+  animation-delay: 0.48s;
+}
+
+.stagger-5 {
+  animation-delay: 0.60s;
+}
+
+.stagger-6 {
+  animation-delay: 0.72s;
+}
+
+.stagger-7 {
+  animation-delay: 0.84s;
+}
+
+.stagger-8 {
+  animation-delay: 0.96s;
+}
+
+.stagger-9 {
+  animation-delay: 1.08s;
+}
+
+.stagger-10 {
+  animation-delay: 1.20s;
+}
