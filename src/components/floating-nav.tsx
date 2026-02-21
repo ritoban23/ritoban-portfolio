@@ -8,7 +8,7 @@ import { Home, FolderOpen, BookOpen, Trophy } from "lucide-react";
 const navItems = [
     { label: "Home", href: "/", icon: Home },
     { label: "Projects", href: "/projects", icon: FolderOpen },
-    { label: "Publications", href: "/publications", icon: BookOpen },
+    { label: "Writings", href: "/publications", icon: BookOpen },
     { label: "Achievements", href: "/achievements", icon: Trophy },
 ];
 
@@ -29,8 +29,8 @@ export default function FloatingNav() {
                             key={item.href}
                             href={item.href}
                             className={`group relative flex items-center gap-2 rounded-full px-3 py-2 text-xs tracking-wide transition-all duration-300 ${isActive
-                                    ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-900"
-                                    : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                                ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-900"
+                                : "text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800"
                                 }`}
                         >
                             <item.icon className="size-3.5" />

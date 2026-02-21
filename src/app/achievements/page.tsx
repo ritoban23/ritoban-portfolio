@@ -11,6 +11,9 @@ interface Achievement {
     dates: string;
     org?: string;
     description: string;
+    image?: string;
+    imagePadding?: string;
+    link?: string;
     links?: { title: string; href: string }[];
 }
 
@@ -18,64 +21,75 @@ const ACHIEVEMENTS: Achievement[] = [
     {
         title: "Summer of Bitcoin",
         org: "Summer of Bitcoin",
-        dates: "January 2026",
+        dates: "February 2026",
+        image: "https://resources.saylor.org/wwwresources/wp-content/uploads/20221220112324/500x500.png",
         description:
             "Accepted into the global mentorship program for Bitcoin open-source development, involving a rigorous four-week bootcamp and project proposal round.",
         links: [{ title: "Program", href: "https://www.summerofbitcoin.org" }],
     },
     {
-        title: "Buildspace Season 5 — Nights & Weekends",
-        org: "Buildspace",
-        dates: "2026",
+        title: "BOSS — Chaincode Labs ₿OSS Challenge",
+        org: "Chaincode Labs",
+        dates: "January 2026",
+        image: "https://imgs.search.brave.com/O5YoNbd8aWhGp6CSZtdr1q-EBvdZ1GqdCzLrFmyvPL4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGNjMzBjZjE5/NDlhMzVlNjg3YTFi/MjM4MzM3NTI3MGNl/NjU2ODVmNWI1OGIw/NzQyYmI1YzAxZGI5/NzhhOTI3Ni9ib3Nz/Y2hhbGxlbmdlLnh5/ei8",
         description:
-            "Participated in the world's largest accelerator for independent builders and niche projects, building in public during the Nights & Weekends cohort.",
-        links: [{ title: "Buildspace", href: "https://buildspace.so" }],
+            "Selected for the Chaincode Labs BOSS (Bitcoin Open Source Software) Challenge, a technically rigorous programme for high-level contributors to Bitcoin Core and Lightning projects.",
+        links: [{ title: "Chaincode", href: "https://chaincode.com" }],
     },
     {
-        title: "MindsDB Hackathon — Grand Prize",
+        title: "MindsDB Hackathon — Runner-Up",
         org: "MindsDB",
-        dates: "2025",
+        dates: "November 2025",
+        image: "https://avatars.githubusercontent.com/u/31035808?s=48&v=4",
         description:
-            "Won a $1,000 grant and MacBook Pro for building a RAG-based AI agent, now integrated into MindsDB's official examples repository.",
+            "Runner-up at the MindsDB Hackathon for building a RAG-based AI agent, now integrated into MindsDB's official examples repository.",
         links: [{ title: "Project", href: "https://github.com/ritoban23/crypto-protocol-auditor" }],
+    },
+    {
+        title: "Hacktoberfest Super Contributor",
+        org: "Hacktoberfest",
+        dates: "October 2025",
+        image: "https://avatars.githubusercontent.com/u/59082416?s=48&v=4",
+        description:
+            "Recognized by 10+ global organizations for high-quality, production-grade open-source code contributions during Hacktoberfest.",
     },
     {
         title: "Keploy Fellowship",
         org: "Keploy",
-        dates: "2025",
+        dates: "June 2025",
+        image: "https://avatars.githubusercontent.com/u/92252339?s=48&v=4",
         description:
             "Selected for a cohort with a 5% acceptance rate focused on scalable API development and full-stack engineering.",
         links: [{ title: "Keploy", href: "https://keploy.io" }],
     },
     {
-        title: "Hacktoberfest Engineering Recognition",
-        org: "Hacktoberfest",
-        dates: "2025",
-        description:
-            "Recognized by 10+ global organizations for high-quality, production-grade open-source code contributions during Hacktoberfest.",
-    },
-    {
-        title: "EA Organiser Support Programme",
+        title: "EA OSP '25",
         org: "Centre for Effective Altruism",
         dates: "2025",
+        image: "https://imgs.search.brave.com/EPWkzY4vdMvA-5Sa84yJH34fol29j-N1-WvxWIQ0qLQ/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmUyMGVmZGFh/MTUyNWZkYmNmNzhi/YTM2MmQ5M2NiMTQy/ZDQzNWU5ZDkxZWQx/YTljZDgyNDUwZjZj/YmNiZjQ2MC93d3cu/ZWZmZWN0aXZlYWx0/cnVpc20ub3JnLw",
         description:
-            "Accepted into the Centre for Effective Altruism's programme, which provides mentorship, training, and funding to help group organisers maximize their impact.",
+            "Accepted into the Centre for Effective Altruism's Organiser Support Programme (OSP) — a selective initiative that provides mentorship, training, and funding to EA group leaders working to direct talent, capital, and research toward the world's most pressing problems.",
         links: [{ title: "CEA", href: "https://www.effectivealtruism.org" }],
     },
     {
         title: "blockchain.peter — 25K Instagram",
         org: "Instagram",
         dates: "February 2025",
+        image: "https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png",
+        link: "https://www.instagram.com/blockchain.peter/",
         description:
             "Grew blockchain.peter on Instagram to 25,000+ followers, earning sponsorships from major blockchain projects through consistent educational content.",
+        links: [{ title: "@blockchain.peter", href: "https://www.instagram.com/blockchain.peter/" }],
     },
     {
-        title: "BOSS — Chaincode Labs ₿OSS Challenge",
-        org: "Chaincode Labs",
-        dates: "2024",
+        title: "Buildspace Season 5 — Nights & Weekends",
+        org: "Buildspace",
+        dates: "July 2024",
+        image: "https://i.tracxn.com/logo/company/buildspace_c29dee71-55ff-4f49-bb22-1e22842a2f58.png?format=webp&height=120&width=120",
+        imagePadding: "p-0",
         description:
-            "Selected for the Chaincode Labs ₿OSS (Bitcoin Open Source Software) Challenge, a technically rigorous programme for high-level contributors to Bitcoin Core and Lightning projects.",
-        links: [{ title: "Chaincode", href: "https://chaincode.com" }],
+            "Participated in the world's largest accelerator for independent builders and niche projects, building in public during the Nights & Weekends cohort.",
+        links: [{ title: "Buildspace", href: "https://buildspace.so" }],
     },
 ];
 
@@ -113,9 +127,17 @@ export default function AchievementsPage() {
                             className="w-full flex items-start justify-between gap-10"
                         >
                             <TimelineConnectItem className="flex items-start justify-center">
-                                <div className="size-10 bg-white dark:bg-zinc-900 z-10 shrink-0 overflow-hidden p-1 border border-zinc-200 dark:border-zinc-700 rounded-full shadow ring-2 ring-zinc-200 dark:ring-zinc-700 flex-none flex items-center justify-center">
-                                    <Trophy size={16} className="text-zinc-400 dark:text-zinc-500" />
-                                </div>
+                                {item.image ? (
+                                    <img
+                                        src={item.image}
+                                        alt={item.org ?? item.title}
+                                        className={`size-10 bg-white dark:bg-zinc-900 z-10 shrink-0 overflow-hidden border border-zinc-200 dark:border-zinc-700 rounded-full shadow ring-2 ring-zinc-200 dark:ring-zinc-700 object-cover flex-none ${item.imagePadding ?? "p-0.5"}`}
+                                    />
+                                ) : (
+                                    <div className="size-10 bg-white dark:bg-zinc-900 z-10 shrink-0 overflow-hidden p-1 border border-zinc-200 dark:border-zinc-700 rounded-full shadow ring-2 ring-zinc-200 dark:ring-zinc-700 flex-none flex items-center justify-center">
+                                        <Trophy size={16} className="text-zinc-400 dark:text-zinc-500" />
+                                    </div>
+                                )}
                             </TimelineConnectItem>
                             <div className="flex flex-1 flex-col justify-start gap-2 min-w-0 pb-2">
                                 <time className="text-xs text-zinc-400 dark:text-zinc-500 tracking-wide">
