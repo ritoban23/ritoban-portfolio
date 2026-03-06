@@ -257,14 +257,6 @@ export const DATA = {
     // Featured projects shown on the main page
     featuredProjects: [
         {
-            title: "Terraform AWS Nginx Docker",
-            href: "https://github.com/ritoban23/terraform-aws-nginx-docker",
-            dates: "2026",
-            description:
-                "A modular Terraform project to provision an AWS VPC, EC2 instance, and deploy Nginx/Docker.",
-            technologies: ["Terraform", "AWS", "Docker", "Nginx", "HCL"],
-        },
-        {
             title: "Crypto Protocol Auditor",
             href: "https://github.com/ritoban23/crypto-protocol-auditor",
             dates: "2025",
