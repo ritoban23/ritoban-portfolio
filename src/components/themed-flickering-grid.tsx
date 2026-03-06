@@ -8,7 +8,10 @@ export function ThemedFlickeringGrid() {
     const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
-    useEffect(() => setMounted(true), []);
+    useEffect(() => {
+        const timer = setTimeout(() => setMounted(true), 0);
+        return () => clearTimeout(timer);
+    }, []);
 
     // Use light dots on dark bg, dark dots on light bg
     const color = mounted && resolvedTheme === "dark"

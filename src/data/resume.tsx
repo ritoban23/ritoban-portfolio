@@ -7,7 +7,7 @@ import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Docker } from "@/components/ui/svgs/docker";
 import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import { HtmlIcon } from "@/components/ui/svgs/html";
-import { CssIcon } from "@/components/ui/svgs/css";
+
 import { JavaScriptIcon } from "@/components/ui/svgs/javascript";
 import { GitIcon } from "@/components/ui/svgs/git";
 import { MongoDBIcon } from "@/components/ui/svgs/mongodb";
@@ -256,6 +256,14 @@ export const DATA = {
     ] as Publication[],
     // Featured projects shown on the main page
     featuredProjects: [
+        {
+            title: "Terraform AWS Nginx Docker",
+            href: "https://github.com/ritoban23/terraform-aws-nginx-docker",
+            dates: "2026",
+            description:
+                "A modular Terraform project to provision an AWS VPC, EC2 instance, and deploy Nginx/Docker.",
+            technologies: ["Terraform", "AWS", "Docker", "Nginx", "HCL"],
+        },
         {
             title: "Crypto Protocol Auditor",
             href: "https://github.com/ritoban23/crypto-protocol-auditor",

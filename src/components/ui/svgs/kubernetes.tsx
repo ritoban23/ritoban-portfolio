@@ -32,6 +32,7 @@ const Kubernetes = (props: SVGProps<SVGSVGElement>) => (
         textTransform: "none",
         direction: "ltr",
         blockProgression: "tb",
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         writingMode: "lr-tb" as any,
         textAnchor: "start",
         baselineShift: "baseline",
