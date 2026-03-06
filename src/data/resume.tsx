@@ -286,6 +286,15 @@ export const DATA = {
     // All projects (for /projects page)
     allProjects: [
         {
+            title: "Terraform AWS Nginx Docker",
+            href: "https://github.com/ritoban23/terraform-aws-nginx-docker",
+            dates: "2026",
+            description:
+                "A modular Terraform project to provision an AWS VPC, EC2 instance, and deploy Nginx/Docker.",
+            technologies: ["Terraform", "AWS", "Docker", "Nginx", "HCL"],
+            category: "DevOps",
+        },
+        {
             title: "Crypto Protocol Auditor",
             href: "https://github.com/ritoban23/crypto-protocol-auditor",
             dates: "2025",

@@ -82,6 +82,15 @@ const ACHIEVEMENTS: Achievement[] = [
         links: [{ title: "@blockchain.peter", href: "https://www.instagram.com/blockchain.peter/" }],
     },
     {
+        title: "Fintech Olympiad, IFTA National Finalist '24",
+        org: "India FinTech Forum",
+        dates: "December 2024",
+        image: "https://fintecholympiad.org/wp-content/uploads/2024/05/image6.png",
+        description:
+            "Selected as one of the Top 75 candidates nationwide in the Fintech Olympiad 2024. The Olympiad is an initiative by the India FinTech Forum to promote financial and digital literacy, seeing participation from over 40,000 students across 2,000+ colleges in India.",
+        links: [{ title: "Fintech Olympiad", href: "https://fintecholympiad.org/" }],
+    },
+    {
         title: "Buildspace Season 5 — Nights & Weekends",
         org: "Buildspace",
         dates: "July 2024",
