@@ -4,6 +4,7 @@ import "./globals.css";
 import { DATA } from "@/data/resume";
 import { ThemeProvider } from "@/components/theme-provider";
 import FloatingNav from "@/components/floating-nav";
+import { Analytics } from "@vercel/analytics/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,7 @@ export default function RootLayout({
             </div>
           </footer>
           <FloatingNav />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
