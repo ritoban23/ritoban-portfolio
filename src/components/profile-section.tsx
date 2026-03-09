@@ -15,13 +15,13 @@ export function ProfileSection() {
             {/* Profile Image */}
             {DATA.avatarUrl && (
                 <div className="w-1/3 md:w-full flex-shrink-0">
-                    <div className="relative md:w-[65%] aspect-[3/4]">
+                    <div className="relative md:w-[65%] aspect-[3/4] rounded-xl overflow-hidden">
                         <Image
                             src={DATA.avatarUrl}
                             alt={DATA.name}
                             fill
                             priority
-                            className="object-cover rounded-xl"
+                            className="object-cover scale-150 translate-x-[20%]"
                         />
                     </div>
                 </div>

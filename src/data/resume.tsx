@@ -59,7 +59,7 @@ export const DATA = {
         "The convergence of these distinct traits is what fuels my engineering philosophy and pushes me to build beyond the status quo.\n\nI live to ship code that matters. I am energized by the chaos of creation and the order of logic. I am obsessed with distributed systems, algorithmic efficiency, the nuance of open collaboration, and the endless possibilities of intelligent software. I remain a perpetual student of the craft to ensure I am always building at the bleeding edge. The digital landscape is vast, and I have only just begun to explore its depths.",
     aboutMeClosing:
         "You will often find me side-questing: dabbling in design, music, weaving little bits of storytelling, and keeping up with sports.",
-    avatarUrl: "/me.jpeg",
+    avatarUrl: "/lappypic.JPG",
     email: "ankudutt101@gmail.com",
     cvUrl: undefined,
     blogUrl: undefined,
@@ -261,7 +261,7 @@ export const DATA = {
             href: "https://github.com/ritoban23/crypto-protocol-auditor",
             dates: "2025",
             description:
-                "AI-powered auditor built on MindsDB that unifies scattered crypto/web3 data into one conversational interface. Analyzes smart contracts, transaction patterns, and protocol health.",
+                "AI-powered auditor built on MindsDB that unifies scattered crypto/web3 data into one conversational interface. Analyzes whitepapers, live data, and protocol health.",
             technologies: ["MindsDB", "Next.js", "Python", "LLM APIs", "SQL", "REST APIs"],
             imageUrl: "https://raw.githubusercontent.com/ritoban23/crypto-protocol-auditor/main/assets/logo.png",
         },
@@ -299,7 +299,7 @@ export const DATA = {
             href: "https://github.com/ritoban23/crypto-protocol-auditor",
             dates: "2025",
             description:
-                "AI-powered auditor built on MindsDB that unifies scattered crypto/web3 data into one conversational interface. Analyzes smart contracts, transaction patterns, and protocol health.",
+                "AI-powered auditor built on MindsDB that unifies scattered crypto/web3 data into one conversational interface. Analyzes whitepapers, live data, and protocol health.",
             technologies: ["MindsDB", "Next.js", "Python", "LLM APIs", "SQL", "REST APIs"],
             category: "AI / ML",
             imageUrl: "https://raw.githubusercontent.com/ritoban23/crypto-protocol-auditor/main/assets/logo.png",
@@ -325,11 +325,20 @@ export const DATA = {
             imageUrl: "https://raw.githubusercontent.com/ritoban23/north-star/main/assets/northstar_logo.png",
         },
         {
+            title: "Coin Smith",
+            href: "https://github.com/ritoban23/coin-smith",
+            dates: "2026",
+            description:
+                "A PSBT (Partially Signed Bitcoin Transaction) builder with a premium dark-themed web UI. Select coins, compute fees, construct unsigned transactions with full RBF and locktime support. Built for the Summer of Bitcoin 2026 Developer Challenge. Features greedy coin selection, accurate vBytes estimation for P2PKH/P2WPKH/P2TR/P2WSH, two-pass fee/change handling, BIP-174 compliant PSBT construction, safety warnings, and an educational UI with hover tooltips explaining every Bitcoin concept.",
+            technologies: ["Node.js", "Express.js", "bitcoinjs-lib", "Jest", "HTML/CSS/JS"],
+            category: "Web3 & Blockchain",
+        },
+        {
             title: "orbWallet",
             href: "https://github.com/ritoban23/orbWallet",
             dates: "2024",
             description:
-                "A web wallet for Solana & Ethereum. Create multiple wallets, generate public/private key pairs, and manage your crypto assets securely.",
+                "A web3 wallet key pair generator for Solana & Ethereum. Create multiple wallets, public/private key pairs, and manage your crypto assets securely.",
             technologies: ["Solana", "Ethereum", "Web3", "Cryptography"],
             category: "Web3 & Blockchain",
         },
