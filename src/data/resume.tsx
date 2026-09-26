@@ -47,12 +47,12 @@ export const DATA = {
     location: "India",
     locationLink: "https://www.google.com/maps/place/India",
     title: "Software Developer",
-    institution: "Senior at KIIT University",
-    institutionUrl: undefined,
+    institution: "CS Graduate, KIIT University",
+    institutionUrl: "https://kiit.ac.in",
     heroTagline: "hi, ritoban here.",
     heroSubtitle: "I like creating with purpose and play.",
     heroDescription:
-        "Crafting elegant code for complex realities. Obsessed with the nuance of systems thinking, efficiency, and the beauty of raw logic. A perpetual student of the ever-evolving digital landscape.",
+        "Crafting scalable software for complex realities. Obsessed with the nuance of systems thinking, distributed architecture, and the beauty of open-source collaboration. A perpetual student of the ever-evolving digital landscape.",
     beginnersMind:
         "Cultivating a \"beginner's mind\" to approach complex problems with fresh eyes, constantly deconstructing and rebuilding my understanding of the world—all while striving for technical excellence and impact.",
     convergenceParagraph:
@@ -64,9 +64,10 @@ export const DATA = {
     cvUrl: undefined,
     blogUrl: undefined,
     githubUsername: "ritoban23",
-    linkedinUsername: "ritoban",
+    linkedinUsername: "ritoban-dutta",
     mediumUsername: "ritoban",
     twitterUsername: undefined,
+    scholarUrl: "https://scholar.google.com/citations?hl=en&user=xlKhB2sAAAAJ&view_op=list_works",
     skillCategories: [
         {
             label: "Full Stack",
@@ -134,14 +135,43 @@ export const DATA = {
     },
     work: [
         {
+            company: "Technical Alignment Research Accelerator",
+            href: "https://www.linkedin.com/company/tara-alignment/",
+            location: "Hybrid",
+            title: "AI Safety Research Fellow",
+            logoUrl: "https://static.wixstatic.com/media/8e5533_7151e824542f416a953c85f350f533a0~mv2.png/v1/fill/w_262,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8e5533_7151e824542f416a953c85f350f533a0~mv2.png",
+            start: "08/2026",
+            end: "Present",
+            isCurrentRole: true,
+            description: [
+                "Studying transformer architectures, mechanistic interpretability, reinforcement learning, and model evaluations.",
+                "Solving alignment problems alongside an APAC-wide cohort of engineers and researchers.",
+            ],
+        },
+        {
+            company: "Arintra",
+            href: "https://www.linkedin.com/company/arintra/",
+            location: "Bengaluru, India · Hybrid",
+            title: "Software Development Engineer (Intern)",
+            logoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHrxphVM5QlbQ/company-logo_200_200/B4EaBeJaHXG8AE-/0/1788285919990/arintra_logo?e=1792022400&v=beta&t=pBAeeQQTo-g-qFPUlGW9tcxJyqbKg0FWbzZbDQ4VhHI",
+            start: "04/2026",
+            end: "Present",
+            isCurrentRole: true,
+            description: [
+                "Building an industry leader in healthcare revenue cycle operations through intelligent automation and AI.",
+                "Developing AI-assisted engineering workflows, LLM-powered automation pipelines, and data infrastructure for a production healthcare AI platform.",
+                "Cross-functional collaboration with product, data science, and clinical domain experts on healthcare NLP workflows.",
+            ],
+        },
+        {
             company: "Datacurve (YC W24)",
             href: "https://datacurve.ai",
             location: "Remote",
             title: "FOSS Engineer (Contract)",
             logoUrl: "/datacurve.avif",
             start: "12/2025",
-            end: "Present",
-            isCurrentRole: true,
+            end: "03/2026",
+            isCurrentRole: false,
             description: [
                 "Engineering robust solutions for critical bugs and features across major open-source ecosystems.",
                 "Generating data for State-of-the-Art LLMs, directly contributing to the 'Project Mars' program on Shipd platform.",
@@ -200,10 +230,11 @@ export const DATA = {
         },
         {
             year: "2025",
-            conference: "Cambridge Scholars (In Progress)",
+            conference: "Cambridge Scholars Publishing",
             title: "Leveraging GenAI For Multi-Modal Content Creation",
             authors: "Ritoban Dutta",
-            tldr: "An ongoing research project exploring how generative AI can be harnessed for creating multi-modal content across text, images, and audio, with a focus on practical applications and ethical considerations.",
+            paperUrl: "https://scholar.google.com/citations?hl=en&user=xlKhB2sAAAAJ&view_op=list_works",
+            tldr: "Research exploring how generative AI can be harnessed for creating multi-modal content across text, images, and audio — with a focus on practical applications and ethical considerations. Published by Cambridge Scholars Publishing.",
             category: "Research" as const,
         },
     ] as Publication[],
@@ -220,10 +251,11 @@ export const DATA = {
         },
         {
             year: "2025",
-            conference: "Cambridge Scholars (In Progress)",
+            conference: "Cambridge Scholars Publishing",
             title: "Leveraging GenAI For Multi-Modal Content Creation",
             authors: "Ritoban Dutta",
-            tldr: "An ongoing research project exploring how generative AI can be harnessed for creating multi-modal content across text, images, and audio, with a focus on practical applications and ethical considerations.",
+            paperUrl: "https://scholar.google.com/citations?hl=en&user=xlKhB2sAAAAJ&view_op=list_works",
+            tldr: "Research exploring how generative AI can be harnessed for creating multi-modal content across text, images, and audio — with a focus on practical applications and ethical considerations. Published by Cambridge Scholars Publishing.",
             category: "Research" as const,
         },
         {
@@ -266,15 +298,6 @@ export const DATA = {
             imageUrl: "https://raw.githubusercontent.com/ritoban23/crypto-protocol-auditor/main/assets/logo.png",
         },
         {
-            title: "gh-showcase",
-            href: "https://github.com/ritoban23/gh-showcase",
-            dates: "2025",
-            description:
-                "Drop-in React component to visualize your GitHub activity, PR breakdown, and developer DNA in seconds. Published as an NPM package for easy integration.",
-            technologies: ["React", "TypeScript", "GitHub API", "NPM Package"],
-            imageUrl: "https://raw.githubusercontent.com/ritoban23/gh-showcase/main/public/gh-showcase-logo.png",
-        },
-        {
             title: "GCP Retail Analytics Pipeline",
             href: "https://github.com/ritoban23/gcp-retail-analytics-pipeline",
             dates: "2024",
@@ -282,9 +305,26 @@ export const DATA = {
                 "End-to-end data engineering platform on GCP — ingests transactional retail data from Cloud SQL via PySpark on Dataproc, stores it in a GCS data lake, models it in BigQuery using a Medallion Architecture (Bronze → Silver → Gold), and visualises business insights in Looker Studio.",
             technologies: ["GCP", "BigQuery", "PySpark", "Dataproc", "Cloud SQL", "Looker Studio", "Python", "SQL"],
         },
+        {
+            title: "nextflow",
+            href: "https://github.com/ritoban23/nextflow",
+            dates: "2025",
+            description:
+                "CLI tool that scaffolds production-ready Next.js projects with a single command — pre-wired with auth, DB, CI/CD, and best-practice structure.",
+            technologies: ["CLI", "Next.js", "TypeScript", "Developer Tools"],
+        },
     ],
     // All projects (for /projects page)
     allProjects: [
+        {
+            title: "nextflow",
+            href: "https://github.com/ritoban23/nextflow",
+            dates: "2025",
+            description:
+                "CLI tool that scaffolds production-ready Next.js projects with a single command — pre-wired with auth, DB, CI/CD, and best-practice structure.",
+            technologies: ["CLI", "Next.js", "TypeScript", "Developer Tools"],
+            category: "Developer Tools",
+        },
         {
             title: "Terraform AWS Nginx Docker",
             href: "https://github.com/ritoban23/terraform-aws-nginx-docker",

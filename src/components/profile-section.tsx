@@ -6,6 +6,7 @@ import {
     Twitter,
     ArrowUpRight,
     BookOpen,
+    GraduationCap,
 } from "lucide-react";
 import { DATA } from "@/data/resume";
 
@@ -133,6 +134,20 @@ export function ProfileSection() {
                             >
                                 <Linkedin size={14} />
                                 linkedin.com/in/{DATA.linkedinUsername}
+                            </a>
+                        </>
+                    )}
+                    {DATA.scholarUrl && (
+                        <>
+                            <br />
+                            <a
+                                href={DATA.scholarUrl}
+                                className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <GraduationCap size={14} />
+                                Google Scholar
                             </a>
                         </>
                     )}
