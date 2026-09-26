@@ -149,7 +149,7 @@ export const DATA = {
             ],
         },
         {
-            company: "Arintra",
+            company: "Arintra (YC W22)",
             href: "https://www.linkedin.com/company/arintra/",
             location: "Bengaluru, India · Hybrid",
             title: "Software Development Engineer (Intern)",
