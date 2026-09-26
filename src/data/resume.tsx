@@ -153,7 +153,7 @@ export const DATA = {
             href: "https://www.linkedin.com/company/arintra/",
             location: "Bengaluru, India · Hybrid",
             title: "Software Development Engineer (Intern)",
-            logoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQHrxphVM5QlbQ/company-logo_200_200/B4EaBeJaHXG8AE-/0/1788285919990/arintra_logo?e=1792022400&v=beta&t=pBAeeQQTo-g-qFPUlGW9tcxJyqbKg0FWbzZbDQ4VhHI",
+            logoUrl: "https://cdn.prod.website-files.com/654b2d530601810c247fdd5d/6a8186c70ffe83c819bf80c5_Group%202147259684.svg",
             start: "04/2026",
             end: "Present",
             isCurrentRole: true,
