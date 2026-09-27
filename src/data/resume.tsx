@@ -237,6 +237,14 @@ export const DATA = {
             tldr: "Research exploring how generative AI can be harnessed for creating multi-modal content across text, images, and audio — with a focus on practical applications and ethical considerations. Published by Cambridge Scholars Publishing.",
             category: "Research" as const,
         },
+        {
+            year: "2026",
+            conference: "IFIP IoT 2026 (In Progress)",
+            title: "Adaptive Priority Scheduler for Pipeline-Aware MLOps Workloads on Kubernetes",
+            authors: "Ritoban Dutta",
+            tldr: "Targeting the 9th IFIP International Internet of Things Conference (IFIP IoT 2026). Research on an adaptive priority scheduling system for pipeline-aware MLOps workloads on Kubernetes.",
+            category: "Research" as const,
+        },
     ] as Publication[],
     // All publications (for /publications page)
     allPublications: [
@@ -256,6 +264,14 @@ export const DATA = {
             authors: "Ritoban Dutta",
             paperUrl: "https://scholar.google.com/citations?hl=en&user=xlKhB2sAAAAJ&view_op=list_works",
             tldr: "Research exploring how generative AI can be harnessed for creating multi-modal content across text, images, and audio — with a focus on practical applications and ethical considerations. Published by Cambridge Scholars Publishing.",
+            category: "Research" as const,
+        },
+        {
+            year: "2026",
+            conference: "IFIP IoT 2026 (In Progress)",
+            title: "Adaptive Priority Scheduler for Pipeline-Aware MLOps Workloads on Kubernetes",
+            authors: "Ritoban Dutta",
+            tldr: "Targeting the 9th IFIP International Internet of Things Conference (IFIP IoT 2026). Research on an adaptive priority scheduling system for pipeline-aware MLOps workloads on Kubernetes.",
             category: "Research" as const,
         },
         {
