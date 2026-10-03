@@ -2,14 +2,10 @@
  * Run once to seed Sanity with all existing data from resume.tsx
  * Usage: npx tsx scripts/seed-sanity.ts
  */
-import { createClient } from '@sanity/client'
+import { getCliClient } from 'sanity/cli'
 
-const client = createClient({
-  projectId: 'icf8axc4',
-  dataset: 'production',
+const client = getCliClient().withConfig({
   apiVersion: '2024-01-01',
-  token: process.env.SANITY_API_TOKEN,
-  useCdn: false,
 })
 
 async function seed() {

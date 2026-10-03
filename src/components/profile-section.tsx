@@ -10,16 +10,17 @@ import {
 } from "lucide-react";
 import { DATA } from "@/data/resume";
 
-export function ProfileSection() {
+export function ProfileSection({ profile }: { profile?: Partial<typeof DATA> }) {
+    const data = { ...DATA, ...(profile || {}) };
     return (
         <div className="md:sticky top-12 flex flex-row-reverse md:flex-col gap-4 md:gap-0 md:space-y-8">
             {/* Profile Image */}
-            {DATA.avatarUrl && (
+            {data.avatarUrl && (
                 <div className="w-1/3 md:w-full flex-shrink-0">
                     <div className="relative md:w-[65%] aspect-[3/4] rounded-xl overflow-hidden">
                         <Image
-                            src={DATA.avatarUrl}
-                            alt={DATA.name}
+                            src={data.avatarUrl}
+                            alt={data.name}
                             fill
                             priority
                             className="object-cover scale-150 translate-x-[20%]"
@@ -32,32 +33,32 @@ export function ProfileSection() {
             <div className="w-2/3 md:w-full">
                 {/* Name */}
                 <h1 className="font-serif text-3xl font-light tracking-wide mb-3 text-zinc-900 dark:text-zinc-100">
-                    {DATA.name}
+                    {data.name}
                 </h1>
 
                 {/* Title & Institution */}
                 <p className="text-zinc-600 dark:text-zinc-400 text-xs leading-relaxed tracking-wide uppercase mb-6">
-                    {DATA.title}
+                    {data.title}
                     <br />
-                    {DATA.institutionUrl ? (
+                    {data.institutionUrl ? (
                         <a
-                            href={DATA.institutionUrl}
+                            href={data.institutionUrl}
                             className="hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors duration-300"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            {DATA.institution}
+                            {data.institution}
                         </a>
                     ) : (
-                        DATA.institution
+                        data.institution
                     )}
                 </p>
 
                 {/* Quick Links (Blog, CV) */}
                 <div className="flex gap-6 mb-6">
-                    {DATA.blogUrl && (
+                    {data.blogUrl && (
                         <a
-                            href={DATA.blogUrl}
+                            href={data.blogUrl}
                             className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors duration-300"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -69,9 +70,9 @@ export function ProfileSection() {
                             <span className="tracking-wider uppercase">Blog</span>
                         </a>
                     )}
-                    {DATA.cvUrl && (
+                    {data.cvUrl && (
                         <a
-                            href={DATA.cvUrl}
+                            href={data.cvUrl}
                             className="group inline-flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors duration-300"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -88,60 +89,60 @@ export function ProfileSection() {
                 {/* Social Links */}
                 <div className="space-y-2">
                     <a
-                        href={`mailto:${DATA.email}`}
+                        href={`mailto:${data.email}`}
                         className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <Mail size={14} />
-                        {DATA.email}
+                        {data.email}
                     </a>
-                    {DATA.twitterUsername && (
+                    {data.twitterUsername && (
                         <>
                             <br />
                             <a
-                                href={`https://twitter.com/${DATA.twitterUsername}`}
+                                href={`https://twitter.com/${data.twitterUsername}`}
                                 className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Twitter size={14} />@{DATA.twitterUsername}
+                                <Twitter size={14} />@{data.twitterUsername}
                             </a>
                         </>
                     )}
-                    {DATA.githubUsername && (
+                    {data.githubUsername && (
                         <>
                             <br />
                             <a
-                                href={`https://github.com/${DATA.githubUsername}`}
+                                href={`https://github.com/${data.githubUsername}`}
                                 className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <Github size={14} className="dark:invert" />
-                                github.com/{DATA.githubUsername}
+                                github.com/{data.githubUsername}
                             </a>
                         </>
                     )}
-                    {DATA.linkedinUsername && (
+                    {data.linkedinUsername && (
                         <>
                             <br />
                             <a
-                                href={`https://www.linkedin.com/in/${DATA.linkedinUsername}`}
+                                href={`https://www.linkedin.com/in/${data.linkedinUsername}`}
                                 className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <Linkedin size={14} />
-                                linkedin.com/in/{DATA.linkedinUsername}
+                                linkedin.com/in/{data.linkedinUsername}
                             </a>
                         </>
                     )}
-                    {DATA.scholarUrl && (
+                    {data.scholarUrl && (
                         <>
                             <br />
                             <a
-                                href={DATA.scholarUrl}
+                                href={data.scholarUrl}
                                 className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -151,17 +152,17 @@ export function ProfileSection() {
                             </a>
                         </>
                     )}
-                    {DATA.mediumUsername && (
+                    {data.mediumUsername && (
                         <>
                             <br />
                             <a
-                                href={`https://medium.com/@${DATA.mediumUsername}`}
+                                href={`https://medium.com/@${data.mediumUsername}`}
                                 className="inline-flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <BookOpen size={14} />
-                                medium.com/@{DATA.mediumUsername}
+                                medium.com/@{data.mediumUsername}
                             </a>
                         </>
                     )}
